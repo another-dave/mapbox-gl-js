@@ -142,7 +142,7 @@ function makeFetchRequest(requestParameters: RequestParameters, callback: Respon
                 // silence expected AbortError
                 return;
             }
-            callback(new Error(error.message));
+            callback(error);
         });
     };
 
